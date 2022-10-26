@@ -1,0 +1,43 @@
+2. 
+*Implicit wait
+	+ Implicit wait sẽ báo cho trình điều khiển web chờ trong khoảng thời gian xác định trước khi đưa ra thông báo “No Such Element Exception”.
+	+ Thời gian chờ đợi được áp dụng cho tất cả các phần tử trong tập lệnh
+	+ Trong Implicit wait, không cần chỉ định "ExpectedConditions" trên phần tử được định vị
+	+ Nên được sử dụng với những thành phần có thể được xác định trong khung thời gian được chỉ định trong Implicit wait
+
+
+*Explicit wait
+	+ Explicit wait được sử dụng để yêu cầu trình duyệt web chờ đợi trong một thời gian nhất định, theo một điều kiện cụ thể. Nếu vượt quá thời gian chờ đợi thì sẽ đưa ra ngoại lệ ElementNotVisibleException
+	+ Thời gian chờ đợi được áp dụng cho những phần tử được chỉ định
+	+ Trong Explicit wait, chúng ta cần chỉ định "ExpectedConditions" trên phần tử được định vị
+	+ Nên sử dụng với những thành phần mất nhiều thời gian để tải, hoặc để kiểm tra các thuộc tính của phần tử như (visualOfEuityLocated, ElementToBeClickable, ElementToBeSelected)
+
+3. 
+Write wait methods using explicit wait method to wait:
+• Wait for an element is displayed
+
+        public void Click (By by)
+        {
+            IWebElement e = _driver.FindElement(by);
+            _wait.Until(SeleniumExtras.WaitHelpers.
+                ExpectedConditions.ElementIsVisible(by));
+        }
+
+• Wait for an element is clickable
+
+
+        public void Click (By by)
+        {
+            IWebElement e = _driver.FindElement(by);
+		_wait.Until(SeleniumExtras.WaitHelpers.
+   			 ExpectedConditions.ElementToBeClickable(by));
+        }
+
+• Wait for an element is selected
+
+        public void Click (By by)
+        {
+            IWebElement e = _driver.FindElement(by);
+		_wait.Until(SeleniumExtras.WaitHelpers.
+    			ExpectedConditions.ElementToBeSelected(by));
+        }
