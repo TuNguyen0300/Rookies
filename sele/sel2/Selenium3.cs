@@ -4,7 +4,7 @@ using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Support.UI;
 using Assert = NUnit.Framework.Assert;
 
-namespace HW
+namespace Selenium3
 {
     [TestFixture]
     public class Tests
@@ -26,7 +26,7 @@ namespace HW
             driver.Manage().Window.Maximize();
 
             driver.FindElement(By.XPath("//input[@name=\"q\"]")).SendKeys("selenium");
-            driver.FindElement(By.XPath("//input[@name=\"btnK\"]")).SendKeys(Keys.Enter);
+            driver.FindElement(By.XPath("//input[@name=\"q\"]")).SendKeys(Keys.Enter);
 
             string actualTL = driver.Title;
             string expectedTL = "selenium";

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System;
 
-namespace Ex1
+namespace Selenium2
 {
     [TestFixture]
     public class Tests

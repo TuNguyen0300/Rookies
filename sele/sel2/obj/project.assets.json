@@ -1368,11 +1368,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\file Rookies\\selenium\\sel2\\sel2\\sel2.csproj",
+      "projectUniqueName": "E:\\gitRookies\\Rookies\\sele\\sel2\\sel2.csproj",
       "projectName": "sel2",
-      "projectPath": "E:\\file Rookies\\selenium\\sel2\\sel2\\sel2.csproj",
+      "projectPath": "E:\\gitRookies\\Rookies\\sele\\sel2\\sel2.csproj",
       "packagesPath": "C:\\Users\\84366\\.nuget\\packages\\",
-      "outputPath": "E:\\file Rookies\\selenium\\sel2\\sel2\\obj\\",
+      "outputPath": "E:\\gitRookies\\Rookies\\sele\\sel2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\84366\\AppData\\Roaming\\NuGet\\NuGet.Config",

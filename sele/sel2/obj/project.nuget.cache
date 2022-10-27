@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CkpGAUtLiCCWlRKhMtwSJHE0v14Vd95v+YjNwhYnVeXllg3ALCVeT04dz5IC/6Dei2qMJnkjXjyG6/wkeaz80Q==",
+  "dgSpecHash": "TabwKRAGjOKM3Fqy7IKgQkLJT31jIp+NZ1EwM0P8Ty8WScU36WqtfRIJE61i7CkP/o/Uo++vcTaCvR3wHK5yTw==",
   "success": true,
-  "projectFilePath": "E:\\file Rookies\\selenium\\sel2\\sel2\\sel2.csproj",
+  "projectFilePath": "E:\\gitRookies\\Rookies\\sele\\sel2\\sel2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\84366\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\84366\\.nuget\\packages\\microsoft.codecoverage\\17.1.0\\microsoft.codecoverage.17.1.0.nupkg.sha512",
