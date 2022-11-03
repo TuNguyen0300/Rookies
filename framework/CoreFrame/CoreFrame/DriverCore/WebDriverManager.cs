@@ -9,7 +9,7 @@ namespace CoreFrame.DriverCore
 {
     internal class WebDriverManager
     {
-        private static AsyncLocal<IWebDriver> driver = new AsyncLocal<IWebDriver>;
+        private static AsyncLocal<IWebDriver> driver = new AsyncLocal<IWebDriver>();
 
         public static void InitDriver(String Browser, int width, int height)
         {

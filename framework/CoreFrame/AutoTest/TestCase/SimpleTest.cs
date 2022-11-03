@@ -7,16 +7,14 @@ using AutoTest.TestSetup;
 namespace AutoTest
 {   
     [TestFixture]
-    public class SimpleTest : ProjectNUnitTestSetup
+    public class SimpleTest : NUnitTestSetup
     {
 
         [Test]
         public void UserCanSearchVideos()
         {
-            HomePage homePage = new HomePage(_driver);
-            homePage.InputSearchBox("ABC")
-                .ClickSearchButton()
-                .OpenVideo("Hello");
+            LoginPage loginPage = new LoginPage(_driver);
+            loginPage.inputUserName("test"); 
         }
     }
 }

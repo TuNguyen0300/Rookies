@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace CoreFrame.DriverCore
 {
-    internal class WebDriverAction
+    public class WebDriverAction
     {
         public IWebDriver driver;
 
@@ -78,6 +78,40 @@ namespace CoreFrame.DriverCore
             }
             catch (Exception ex)
             {
+                throw ex;
+            }
+        }
+
+        // Select option
+        public void SelectOption(String locator, String key)
+        {
+            try
+            {
+                IWebElement mySelectOption = FindElementByXpath(locator);
+                SelectElement dropdown = new SelectElement(mySelectOption);
+                dropdown.SelectByText(key)
+;
+                TestContext.WriteLine("Select element " + locator + " successfuly with " + key);
+            }
+            catch (Exception ex)
+            {
+                TestContext.WriteLine("Select element " + locator + " failed with " + key);
+                throw ex;
+            }
+        }
+        // action get screenshot
+        public void CapturedScreen()
+        {
+            try
+            {
+
+                Screenshot ss = ((ITakesScreenshot)driver).GetScreenshot();
+                ss.SaveAsFile("Test.jpg", ScreenshotImageFormat.Jpeg);
+                TestContext.WriteLine("Take screen shot successfully");
+            }
+            catch (Exception ex)
+            {
+                TestContext.WriteLine("Take screen shot failed");
                 throw ex;
             }
         }

@@ -1,20 +1,21 @@
 ﻿using AutoTest.PageObject;
 using OpenQA.Selenium;
 using System.Collections.Generic;
+using CoreFrame.DriverCore;
 
 namespace AutoTest.PageObject
 {
-    public class HomePage : HeaderPage
+    public class LoginPage : WebDriverAction
     {
-        public HomePage(IWebDriver? driver) : base(driver)
+        public LoginPage(IWebDriver? driver) : base(driver)
         {
         }
 
-        private readonly By videoTitles = By.XPath("//*[@id='video-title']");
+        private readonly String tfUserName = "//input[@name='uid']";
 
-        public IList<IWebElement>? GetVideoTitles()
+        public void inputUserName(String Username)
         {
-            return _driver?.FindElements(videoTitles);
+            SendKeys_(tfUserName, Username);
         }
 
         

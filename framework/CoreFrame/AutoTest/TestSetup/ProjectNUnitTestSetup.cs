@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AutoTest.TestSetup
 {
-    internal class ProjectNUnitTestSetup : NUnitTestSetup
+    public class ProjectNUnitTestSetup : NUnitTestSetup
     {
         [SetUp]
         public void Setup()
