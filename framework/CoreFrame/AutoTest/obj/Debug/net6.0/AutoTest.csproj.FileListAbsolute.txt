@@ -1,7 +1,5 @@
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoverletSourceRootsMapping
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\testhost.dll
-E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFrame.deps.json
-E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFrame.runtimeconfig.json
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\testhost.exe
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\NUnit3.TestAdapter.dll
@@ -92,8 +90,6 @@ E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\zh-Hans\Micr
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
-E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFrame.dll
-E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFrame.pdb
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\obj\Debug\net6.0\AutoTest.csproj.AssemblyReference.cache
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\obj\Debug\net6.0\AutoTest.GeneratedMSBuildEditorConfig.editorconfig
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\obj\Debug\net6.0\AutoTest.AssemblyInfoInputs.cache
@@ -105,3 +101,7 @@ E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\obj\Debug\net6.0\refint\AutoT
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\obj\Debug\net6.0\AutoTest.pdb
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\obj\Debug\net6.0\AutoTest.genruntimeconfig.cache
 E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\obj\Debug\net6.0\ref\AutoTest.dll
+E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFramework.deps.json
+E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFramework.runtimeconfig.json
+E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFramework.dll
+E:\gitRookies\Rookies\framework\CoreFrame\AutoTest\bin\Debug\net6.0\CoreFramework.pdb

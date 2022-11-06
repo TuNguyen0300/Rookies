@@ -6,17 +6,21 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "AutoTest/1.0.0": {
+      "CoreFramework/1.0.0": {
         "dependencies": {
-          "CoreFramework": "1.0.0",
+          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "Microsoft.NET.Test.Sdk": "17.1.0",
           "NUnit": "3.13.3",
           "NUnit.Analyzers": "3.3.0",
           "NUnit3TestAdapter": "4.2.1",
+          "Selenium.Chrome.WebDriver": "85.0.0",
+          "Selenium.Support": "4.5.1",
+          "Selenium.WebDriver": "4.5.1",
+          "Selenium.WebDriver.ChromeDriver": "107.0.5304.6200",
           "coverlet.collector": "3.1.2"
         },
         "runtime": {
-          "AutoTest.dll": {}
+          "CoreFramework.dll": {}
         }
       },
       "coverlet.collector/3.1.2": {},
@@ -351,28 +355,11 @@
         }
       },
       "Selenium.WebDriver.ChromeDriver/107.0.5304.6200": {},
-      "System.Reflection.Metadata/1.6.0": {},
-      "CoreFramework/1.0.0": {
-        "dependencies": {
-          "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
-          "Microsoft.NET.Test.Sdk": "17.1.0",
-          "NUnit": "3.13.3",
-          "NUnit.Analyzers": "3.3.0",
-          "NUnit3TestAdapter": "4.2.1",
-          "Selenium.Chrome.WebDriver": "85.0.0",
-          "Selenium.Support": "4.5.1",
-          "Selenium.WebDriver": "4.5.1",
-          "Selenium.WebDriver.ChromeDriver": "107.0.5304.6200",
-          "coverlet.collector": "3.1.2"
-        },
-        "runtime": {
-          "CoreFramework.dll": {}
-        }
-      }
+      "System.Reflection.Metadata/1.6.0": {}
     }
   },
   "libraries": {
-    "AutoTest/1.0.0": {
+    "CoreFramework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -502,11 +489,6 @@
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
-    },
-    "CoreFramework/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     }
   }
 }

@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CoreFrame\CoreFrame.csproj" />
+    <ProjectReference Include="..\CoreFrame\CoreFramework.csproj" />
   </ItemGroup>
 
 </Project>

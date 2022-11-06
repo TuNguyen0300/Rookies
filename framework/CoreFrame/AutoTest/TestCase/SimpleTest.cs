@@ -1,20 +1,17 @@
-using AutoTest.PageObject;
-using NUnit.Framework;
 using NUnit.Framework.Internal;
 using AutoTest.TestSetup;
-using CoreFramework.NUnitTestSetup;
+using AutoTest.PageObject;
 
-namespace AutoTest
-{   
+namespace Testcases
+{
     [TestFixture]
-    public class SimpleTest : NUnitTestSetup
+    public class SimpleTests : ProjectNUnitTestSetup
     {
-
         [Test]
-        public void UserCanSearchVideos()
+        public void USerCanSearchVideos()
         {
             LoginPage loginPage = new LoginPage(_driver);
-            loginPage.inputUserName("test"); 
+            loginPage.inputUserName("test");
         }
     }
 }

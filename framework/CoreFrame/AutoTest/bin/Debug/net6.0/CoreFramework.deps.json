@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "CoreFrame/1.0.0": {
+      "CoreFramework/1.0.0": {
         "dependencies": {
           "DotNetSeleniumExtras.WaitHelpers": "3.11.0",
           "Microsoft.NET.Test.Sdk": "17.1.0",
@@ -20,7 +20,7 @@
           "coverlet.collector": "3.1.2"
         },
         "runtime": {
-          "CoreFrame.dll": {}
+          "CoreFramework.dll": {}
         }
       },
       "coverlet.collector/3.1.2": {},
@@ -359,7 +359,7 @@
     }
   },
   "libraries": {
-    "CoreFrame/1.0.0": {
+    "CoreFramework/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
