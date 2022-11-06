@@ -1,7 +1,7 @@
 ﻿using AutoTest.PageObject;
 using OpenQA.Selenium;
 using System.Collections.Generic;
-using CoreFrame.DriverCore;
+using CoreFramework.DriverCore;
 
 namespace AutoTest.PageObject
 {

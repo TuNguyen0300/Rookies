@@ -1,8 +1,8 @@
 using AutoTest.PageObject;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
-using CoreFrame.NUnitTestSetup;
 using AutoTest.TestSetup;
+using CoreFramework.NUnitTestSetup;
 
 namespace AutoTest
 {   

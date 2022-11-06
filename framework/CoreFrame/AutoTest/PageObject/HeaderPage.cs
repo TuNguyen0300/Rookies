@@ -1,7 +1,7 @@
-﻿using AutoTest.PageObject;
+﻿using RookiesTest.PageObject;
 using OpenQA.Selenium;
 
-namespace AutoTest.PageObject
+namespace RookiesTest.PageObject
 {
     public class HeaderPage
     {

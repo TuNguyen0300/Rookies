@@ -410,7 +410,7 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
         }
       },
-      "CoreFrame/1.0.0": {
+      "CoreFramework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
@@ -426,10 +426,10 @@
           "coverlet.collector": "3.1.2"
         },
         "compile": {
-          "bin/placeholder/CoreFrame.dll": {}
+          "bin/placeholder/CoreFramework.dll": {}
         },
         "runtime": {
-          "bin/placeholder/CoreFrame.dll": {}
+          "bin/placeholder/CoreFramework.dll": {}
         }
       }
     }
@@ -1417,15 +1417,15 @@
         "version.txt"
       ]
     },
-    "CoreFrame/1.0.0": {
+    "CoreFramework/1.0.0": {
       "type": "project",
-      "path": "../CoreFrame/CoreFrame.csproj",
-      "msbuildProject": "../CoreFrame/CoreFrame.csproj"
+      "path": "../CoreFrame/CoreFramework.csproj",
+      "msbuildProject": "../CoreFrame/CoreFramework.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "CoreFrame >= 1.0.0",
+      "CoreFramework >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.1.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.3.0",
@@ -1460,8 +1460,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFrame.csproj": {
-              "projectPath": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFrame.csproj"
+            "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFramework.csproj": {
+              "projectPath": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFramework.csproj"
             }
           }
         }

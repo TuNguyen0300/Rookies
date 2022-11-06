@@ -1416,9 +1416,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFrame.csproj",
-      "projectName": "CoreFrame",
-      "projectPath": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFrame.csproj",
+      "projectUniqueName": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFramework.csproj",
+      "projectName": "CoreFramework",
+      "projectPath": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFramework.csproj",
       "packagesPath": "C:\\Users\\84366\\.nuget\\packages\\",
       "outputPath": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,6 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using AutoTest.PageObject;
+using OpenQA.Selenium;
+using RookiesTest.PageObject;
 
-namespace AutoTest.PageObject
+namespace RookiesTest.PageObject
 {
     public class VideosPage : HeaderPage
     {

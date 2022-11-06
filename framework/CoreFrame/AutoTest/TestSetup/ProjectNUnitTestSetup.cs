@@ -1,4 +1,4 @@
-﻿using CoreFrame.NUnitTestSetup;
+﻿using CoreFramework.NUnitTestSetup;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace AutoTest.TestSetup
         [SetUp]
         public void Setup()
         {
-            _driver.Url = "http://google.com";
+            _driver.Url = "http://demo.guru99.com";
         }
         [TearDown]
         public void TearDown()

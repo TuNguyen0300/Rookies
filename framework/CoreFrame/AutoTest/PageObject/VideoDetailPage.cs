@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using RookiesTest.PageObject;
 
 namespace AutoTest.PageObject
 {

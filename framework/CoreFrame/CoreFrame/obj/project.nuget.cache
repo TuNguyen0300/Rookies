@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EfzfXydpl4QqRm9nWdb1cMklp+JnzdwfMkbv8ZJAzIee4PDZeWcCJAPOQybt2PeLrPCQH4AHzW66mTBgvWEG5g==",
+  "dgSpecHash": "jpzk846VX0Tat7i1lcDOSciMboN4Z3qg9NBGrmkqkDz6XOSiB9UKGCb3C2hoqdvzkQ4N/H9BIVlp2ecCZb4Hqw==",
   "success": true,
-  "projectFilePath": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFrame.csproj",
+  "projectFilePath": "E:\\gitRookies\\Rookies\\framework\\CoreFrame\\CoreFrame\\CoreFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\84366\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\84366\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
