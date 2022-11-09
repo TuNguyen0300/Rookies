@@ -14,7 +14,7 @@ where e2.last_name='Zlotkey' and e1.last_name<>'Zlotkey'
 select AVG(salary) from employees
 select employee_id, last_name, salary from employees where salary>(select AVG(salary) from employees) order by salary DESC
 3.
-select e1.employee_id, e1.last_name from employees e1
+select distinct e1.employee_id, e1.last_name from employees e1
 inner join employees e2 on e1.department_id =  e2.department_id
 where e2.last_name like '%u%'
 4.
@@ -25,6 +25,10 @@ where l1.city='Seattle'
 5.
 select last_name, salary from employees
 where manager_id in (select employee_id from employees where last_name = 'King') 
+
+select e1.last_name, e1.salary from employees e1
+join employees e2 on e2.employee_id= e1.manager_id
+where e2.last_name = 'King' 
 6.
 Select e1.department_id, e1.last_name, e1.job_id from employees e1
 join departments d1 on e1.department_id = d1.department_id
@@ -41,25 +45,36 @@ select employee_id, last_name, salary from employees where salary > (select AVG(
 union
 select e1.employee_id, e1.last_name, e1.salary from employees e1
 inner join employees e2 on e1.department_id =  e2.department_id
-where e2.last_name like '%u%'
+where e2.last_name like '%u%' and e2.last_name not like '%u%u%'
+
+select employee_id, last_name, salary from employees where salary > (select AVG(salary) from employees)
+union
+select employee_id, last_name, salary from employees
+where department_id in ( select department_id from employees where last_name like '%u%' and last_name not like '%u%u%')
 8. 
-select MAX(salary) AS 'Maximum', MIN(salary) AS 'Minimum', ROUND(SUM(salary),0) AS 'Sum', ROUND(AVG(salary),0) AS 'Average' from employees
+select CAST(MAX(salary) as numeric(10,0)) AS 'Maximum', CAST(MIN(salary) as numeric(10,0)) AS 'Minimum', CAST(SUM(salary) as numeric(10,0)) AS 'Sum', CAST(AVG(salary) as numeric(10,0)) AS 'Average' from employees
 
 9.
-select last_name AS 'Last name', LEN(last_name) AS 'Length'from employees
+select UPPER(left(last_name,1)) + LOWER(right(last_name, len(last_name)-1)), len(last_name) from employees
 where last_name like 'J%' OR last_name like 'A%' or last_name like 'M%' order by last_name
 
+select UPPER(left(last_name,1)) + LOWER(substring(last_name,2, len(last_name))), len(last_name) from employees
+where last_name like 'J%' OR last_name like 'A%' or last_name like 'M%' order by last_name
+
+select UPPER(left(last_name,1)) + LOWER(substring(last_name,2, len(last_name))), len(last_name) from employees
+where UPPER(SUBSTRING(last_name,1,1)) in ('J','A','M') order by last_name
+
 10.
-select employee_id, last_name, salary, salary*1.155 AS 'New Salary' from employees
+select employee_id, last_name, CAST(salary as numeric(10,0)) as 'salary', CAST(salary*1.155 as numeric(10,0)) AS 'New Salary' from employees
 
 11.
 --c1
 select e.last_name, e.department_id, d.department_name from employees e
 join departments d on e.department_id = d.department_id 
 --c2
-select last_name, department_id, CHAR(null) from employees 
+select last_name, department_id, null as departmaent_name from employees 
 union
-select CHAR(null) ,department_id, department_name from departments
+select null ,department_id, department_name from departments
 
 12.
 select e.employee_id, e.last_name from employees e
