@@ -21,15 +21,16 @@ namespace CoreFramework.NUnitTestSetup
         public void OneTimeSetUp()
         {
             HtmlReport.createReport();
+            HtmlReport.createTest(TestContext.CurrentContext.Test.ClassName);
         }
 
         [SetUp]
         public void SetUp()
         {
+            HtmlReport.createNode(TestContext.CurrentContext.Test.ClassName, TestContext.CurrentContext.Test.ClassName);
             WebDriverManager_.InitDriver("chrome", 1920, 1080);
             _driver = WebDriverManager_.GetCurrentDriver();
-            
-            driverBaseAction = new WebDriverAction(_driver, _extentTestCase);
+            driverBaseAction = new WebDriverAction(_driver);
         }
 
         [TearDown]
@@ -39,13 +40,11 @@ namespace CoreFramework.NUnitTestSetup
             TestStatus testStatus = TestContext.CurrentContext.Result.Outcome.Status;
             if (testStatus.Equals(TestStatus.Passed))
             {
-                _extentTestCase?.Pass($"[Pased] Test {TestContext.CurrentContext.Test.Name}");
             }
             else if (testStatus.Equals(TestStatus.Failed))
             {
-                _extentTestCase?.Pass($"[Pased] Test {TestContext.CurrentContext.Test.Name} because the error \n");
             }
-            _extentReport.Flush();
+            HtmlReport.flush();
         }
     }
 }

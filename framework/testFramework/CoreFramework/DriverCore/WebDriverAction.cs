@@ -1,4 +1,5 @@
 ﻿using AventStack.ExtentReports;
+using CoreFramework.Reporter;
 using NUnit.Framework;
 using OpenQA.Selenium;
 using System;
@@ -12,13 +13,11 @@ namespace CoreFramework.DriverCore
     public class WebDriverAction
     {
         public IWebDriver driver;
-        protected ExtentTest? _extentTestCase;
         //private WebDriverWait explicitWait;
 
-        public WebDriverAction(IWebDriver driver, ExtentTest _extentTestCase)
+        public WebDriverAction(IWebDriver driver)
         {
             this.driver = driver;
-            this._extentTestCase = _extentTestCase;
         }
 
         public By ByXpath(string locator)
@@ -88,16 +87,22 @@ namespace CoreFramework.DriverCore
             {
                 FindElementByXpath(locator).SendKeys(key);
                 TestContext.Write("sendkeys into element " + locator + " passed");
-                _extentTestCase.Pass("sendkeys into element " + locator + " passed");
+                HtmlReport.Pass("sendkeys into element " + locator + " passed");
             }
             catch (Exception ex)
             {
-                //string screenshot = TakeScreenshot();
-                //HtmlReporter.Fail("Could not sendkeys to element [" + e.ToString() + "]", ex.ToString(), screenshot);
+                
                 TestContext.Write("sendkeys into element " + locator + " failed");
-                _extentTestCase.Fail("sendkeys into element " + locator + " failed");
+                HtmlReport.Fail("sendkeys into element " + locator + " failed", TakeScreenShot());
                 throw ex;
             }
+        }
+        public string TakeScreenShot()
+        {
+            string path = HtmlReportDirectory.SCREENSHOT_PATH + ("/screenshot_" + DateTime.Now.ToString("yyyyMMddHHmmss")) + ".png";
+            var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+            screenshot.SaveAsFile(path, ScreenshotImageFormat.Png);
+            return path;
         }
     }
 }

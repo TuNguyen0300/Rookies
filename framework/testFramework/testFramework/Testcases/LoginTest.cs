@@ -1,10 +1,5 @@
 ﻿using NUnit.Framework;
 using NUnit.Framework.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using testFramework.PageObject;
 using testFramework.TestSetup;
 
@@ -16,7 +11,7 @@ namespace testFramework.Testcases
         [Test]
         public void Id1_Login()
         {
-            LoginPage loginPage = new LoginPage(_driver, _extentTestCase);
+            LoginPage loginPage = new LoginPage(_driver);
             loginPage.inputUserName("test");
         }
     }

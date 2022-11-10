@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using AventStack.ExtentReports;
@@ -100,6 +101,21 @@ namespace CoreFramework.Reporter
         public static void Fail(string des, string ex, string path)
         {
             GetTest().Fail(des).Fail(ex).AddScreenCaptureFromPath(path);
+            TestContext.WriteLine(des);
+        }
+        public static void Info(string des)
+        {
+            GetTest().Info(des);
+            TestContext.WriteLine(des);
+        }
+        public static void Warning(string des)
+        {
+            GetTest().Warning(des);
+            TestContext.WriteLine(des);
+        }
+        public static void Skip(string des)
+        {
+            GetTest().Skip(des);
             TestContext.WriteLine(des);
         }
     }

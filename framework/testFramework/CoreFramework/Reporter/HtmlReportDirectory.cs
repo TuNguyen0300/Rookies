@@ -25,7 +25,7 @@ namespace CoreFramework.Reporter
             REPORT_FILE_PATH = REPORT_FOLDER_PATH + "\\report.html";
             SCREENSHOT_PATH = REPORT_FOLDER_PATH + "\\Screenshot";
             ACTUAL_SCREENSHOT_PATH = REPORT_FOLDER_PATH + "\\Actual";
-            DIFFERENCE_SCREENSHOT_PATH = REPORT_FOLDER_PATH + "Difference";
+            DIFFERENCE_SCREENSHOT_PATH = REPORT_FOLDER_PATH + "\\Difference";
             BASELINE_SCREENSHOT_PATH = FilePath.GetCurrentDirectoryPath() + "\\Resource\\Baseline";
             
             FilePath.CreateIfNotExists(REPORT_ROOT);
