@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\gitRookies\\Rookies\\framework\\testFramework\\testFramework\\testFramework.csproj": {}
+    "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\testFramework\\testFramework.csproj": {}
   },
   "projects": {
-    "E:\\gitRookies\\Rookies\\framework\\testFramework\\CoreFramework\\CoreFramework.csproj": {
+    "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\CoreFramework\\CoreFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\gitRookies\\Rookies\\framework\\testFramework\\CoreFramework\\CoreFramework.csproj",
+        "projectUniqueName": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\CoreFramework\\CoreFramework.csproj",
         "projectName": "CoreFramework",
-        "projectPath": "E:\\gitRookies\\Rookies\\framework\\testFramework\\CoreFramework\\CoreFramework.csproj",
+        "projectPath": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\CoreFramework\\CoreFramework.csproj",
         "packagesPath": "C:\\Users\\84366\\.nuget\\packages\\",
-        "outputPath": "E:\\gitRookies\\Rookies\\framework\\testFramework\\CoreFramework\\obj\\",
+        "outputPath": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\CoreFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\84366\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,14 +96,14 @@
         }
       }
     },
-    "E:\\gitRookies\\Rookies\\framework\\testFramework\\testFramework\\testFramework.csproj": {
+    "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\testFramework\\testFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\gitRookies\\Rookies\\framework\\testFramework\\testFramework\\testFramework.csproj",
+        "projectUniqueName": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\testFramework\\testFramework.csproj",
         "projectName": "testFramework",
-        "projectPath": "E:\\gitRookies\\Rookies\\framework\\testFramework\\testFramework\\testFramework.csproj",
+        "projectPath": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\testFramework\\testFramework.csproj",
         "packagesPath": "C:\\Users\\84366\\.nuget\\packages\\",
-        "outputPath": "E:\\gitRookies\\Rookies\\framework\\testFramework\\testFramework\\obj\\",
+        "outputPath": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\testFramework\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\84366\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -120,8 +120,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\gitRookies\\Rookies\\framework\\testFramework\\CoreFramework\\CoreFramework.csproj": {
-                "projectPath": "E:\\gitRookies\\Rookies\\framework\\testFramework\\CoreFramework\\CoreFramework.csproj"
+              "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\CoreFramework\\CoreFramework.csproj": {
+                "projectPath": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\CoreFramework\\CoreFramework.csproj"
               }
             }
           }

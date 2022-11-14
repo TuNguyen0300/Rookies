@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RdbcLbYaO/SM5JbMayyKqYZK4OHVGH8tIz7vFIg9EkX1kxt2WG+2tWu5gsizhDFyf5WMM3BquVWJZCBzPd4lwA==",
+  "dgSpecHash": "4O9erEwz60l1huhXb2j3OgmBh74LkDHW3MtyiN9Z2Sh4Zd7LfBdxwaKFq673EHgumWuKmzdbdHLCw9qkLAS2vg==",
   "success": true,
-  "projectFilePath": "E:\\gitRookies\\Rookies\\framework\\testFramework\\testFramework\\testFramework.csproj",
+  "projectFilePath": "E:\\gitRookies\\Rookies\\SeleniumAdvantage_Day3\\testFramework\\testFramework\\testFramework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\84366\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\84366\\.nuget\\packages\\dnsclient\\1.2.0\\dnsclient.1.2.0.nupkg.sha512",
