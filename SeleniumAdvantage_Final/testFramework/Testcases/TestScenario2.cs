@@ -18,15 +18,7 @@ namespace testFramework.Testcases
             AddPage.GoToAddScreen();
             AddPage.EnterValidData();
             AddPage.ClickSubmit();
-        }        
-
-        /*[Test]
-        public void Id1_VerifySearchResultPageTitle()
-        {
-            UserCanSearchKeyword();
-            SearchResultPage searchResultPage = new SearchResultPage(_driver);
-            searchResultPage.ComparePageTitle("test text - Google Search");
-        }*/
+        }  
 
     }
 }

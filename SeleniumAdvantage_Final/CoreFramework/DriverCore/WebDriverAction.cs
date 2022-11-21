@@ -78,6 +78,12 @@ namespace CoreFramework.DriverCore
         {
             return driver.FindElements(ByXpath(locator));
         }
+        public int RowTable(string locator)
+        {
+            int row = driver.FindElements(ByXpath(locator)).Count;
+            TestContext.Write("The number of row is " + row);
+            return row;
+        }
 
         public IWebElement highlightElement(IWebElement element)
         {

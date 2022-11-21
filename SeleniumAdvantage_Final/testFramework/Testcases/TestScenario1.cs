@@ -15,7 +15,6 @@ namespace testFramework.Testcases
             homePage.CheckDisplayElement();
             homePage.SelectWebTable();
             homePage.CheckDisplayWebTable();
-            homePage.GoToAddScreen();
         }
           
 

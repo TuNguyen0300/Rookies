@@ -16,7 +16,8 @@ namespace testFramework.Testcases
             editPage.SelectWebTable();
             editPage.CheckDisplayWebTable();
             editPage.GoToEditScreen();
-
+            editPage.Clear_EnterData();
+            editPage.ClickSubmit();
         }
 
     }

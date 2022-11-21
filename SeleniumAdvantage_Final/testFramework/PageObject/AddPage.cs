@@ -33,15 +33,6 @@ namespace testFramework.PageObject
         private readonly string box_salary = "//*[@id='salary']";
         private readonly string box_department = "//*[@id='department']";
 
-        /*public void SearchKeyword(string Keyword)
-        {
-            SendKeys_(searchBoxLocator, Keyword);
-        }
-
-        public void GoToSearchPage()
-        {
-            Click(searchButton);
-        }*/
         public void SelectElement()
         {
             Click(Element);
@@ -74,6 +65,10 @@ namespace testFramework.PageObject
             SendKeys_(box_age, age);
             SendKeys_(box_salary, salary);
             SendKeys_(box_department, department);
+        }
+        public void Row()
+        {
+            RowTable("//*[@class='rt-table']");
         }
     }
 }
